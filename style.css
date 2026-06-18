@@ -1,0 +1,235 @@
+/* --- Global Reset & Typography --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+header, main, footer {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* --- Typography Links & Tones --- */
+a {
+    color: #0055FF; 
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0033CC; 
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #333333;
+}
+
+/* --- Header Layout --- */
+header {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin: 0;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: #222222;
+    display: inline-block;
+}
+
+header h1 span {
+    background-color: #0055FF;
+    color: #FFFFFF;
+    padding: 0px 6px;
+    border-radius: 4px;
+    margin-left: 2px;
+}
+
+header i {
+    display: block;
+    font-size: 11px;
+    color: #666666;
+    margin-top: -2px;
+    font-style: italic;
+}
+
+header p {
+    margin: 0;
+    font-size: 12px;
+    color: #666666;
+}
+
+/* --- Navbar Layout --- */
+nav {
+    margin-top: 15px;
+    background-color: #EAEAEA;
+    border: 1px solid #CCCCCC;
+    padding: 6px 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: #0055FF; 
+}
+
+header form {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+/* --- Layout Grid (Main Content & Sidebar columns) --- */
+main {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+section {
+    flex: 1;
+}
+
+aside {
+    width: 280px;
+}
+
+/* --- Box Component Styling --- */
+div[title="form-container"] {
+    border: 1px solid #CCCCCC;
+    background-color: #9e9e9e;
+    padding: 15px;
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+div[title="form-container"] h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+}
+
+div[title="form-container"] label {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
+}
+
+div[title="form-container"] input[type="text"],
+div[title="form-container"] input[type="password"],
+div[title="form-container"] input[type="email"] {
+    width: 220px;
+    padding: 3px;
+    border: 1px solid #999999;
+}
+
+div[title="gray-box"] {
+    border: 1px solid #CCCCCC;
+    background-color: #F5F5F5;
+    padding: 12px;
+    font-size: 12px;
+}
+
+div[title="gray-box"] h2,
+div[title="gray-box"] h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* --- Profile Avatar Grid --- */
+div[title="avatar-picker"] {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+label[title="avatar-option"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+label[title="avatar-option"] img {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #CCCCCC;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+
+/* --- Platform Buttons --- */
+button {
+    padding: 4px 10px;
+    font-size: 12px;
+    background-color: #EAEAEA;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #DDDDDD;
+}
+
+/* --- System Notifications --- */
+div[title="status-message"] {
+    margin: 15px 0;
+    padding: 8px;
+    background-color: #FFF9D7;
+    border: 1px solid #E2C822;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* --- Footer Elements --- */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #666666;
+    font-size: 11px;
+}
+
+footer hr {
+    border: 0;
+    border-top: 1px solid #CCCCCC;
+    margin-bottom: 10px;
+}
+
+footer p a {
+    color: #666666;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #0055FF;
+}
